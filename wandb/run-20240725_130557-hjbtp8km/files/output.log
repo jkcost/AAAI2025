@@ -1,0 +1,12 @@
+
+| Arguments Keep work_dir: C:\Users\JK\PycharmProjects\2025_AAAI\work_dir/dj30_AAAI_AAAI_adam_mse\2025_AAAI_Exp_None_exp_num_0725/130554
+Traceback (most recent call last):
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\run.py", line 238, in <module>
+    run(cfg)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\run.py", line 183, in run
+    trainer.train_and_valid()
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\trainers\AAAI_reinforce.py", line 193, in train_and_valid
+    train_loss = self.train_epoch(train_loader,rank,world_size)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\trainers\AAAI_reinforce.py", line 300, in train_epoch
+    batch_x = batch_x.float().to(self.device)
+KeyboardInterrupt

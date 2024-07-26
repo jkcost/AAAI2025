@@ -1,0 +1,36 @@
+2024-07-25 08:57:27,764 INFO    MainThread:36564 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-25 08:57:27,764 INFO    MainThread:36564 [wandb_setup.py:_flush():76] Configure stats pid to 36564
+2024-07-25 08:57:27,764 INFO    MainThread:36564 [wandb_setup.py:_flush():76] Loading settings from C:\Users\JK\.config\wandb\settings
+2024-07-25 08:57:27,764 INFO    MainThread:36564 [wandb_setup.py:_flush():76] Loading settings from C:\Users\JK\PycharmProjects\2025_AAAI\wandb\settings
+2024-07-25 08:57:27,765 INFO    MainThread:36564 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-25 08:57:27,765 INFO    MainThread:36564 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-25 08:57:27,765 INFO    MainThread:36564 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run.py', 'program_abspath': 'C:\\Users\\JK\\PycharmProjects\\2025_AAAI\\run.py', 'program': 'C:\\Users\\JK\\PycharmProjects\\2025_AAAI\\run.py'}
+2024-07-25 08:57:27,765 INFO    MainThread:36564 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-25 08:57:27,765 INFO    MainThread:36564 [wandb_init.py:_log_setup():529] Logging user logs to C:\Users\JK\PycharmProjects\2025_AAAI\wandb\run-20240725_085727-fequdkpq\logs\debug.log
+2024-07-25 08:57:27,765 INFO    MainThread:36564 [wandb_init.py:_log_setup():530] Logging internal logs to C:\Users\JK\PycharmProjects\2025_AAAI\wandb\run-20240725_085727-fequdkpq\logs\debug-internal.log
+2024-07-25 08:57:27,765 INFO    MainThread:36564 [wandb_init.py:init():569] calling init triggers
+2024-07-25 08:57:27,766 INFO    MainThread:36564 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {}
+2024-07-25 08:57:27,766 INFO    MainThread:36564 [wandb_init.py:init():619] starting backend
+2024-07-25 08:57:27,766 INFO    MainThread:36564 [wandb_init.py:init():623] setting up manager
+2024-07-25 08:57:27,769 INFO    MainThread:36564 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-07-25 08:57:27,772 INFO    MainThread:36564 [wandb_init.py:init():631] backend started and connected
+2024-07-25 08:57:27,778 INFO    MainThread:36564 [wandb_init.py:init():720] updated telemetry
+2024-07-25 08:57:27,781 INFO    MainThread:36564 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-25 08:57:28,274 INFO    MainThread:36564 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-25 08:57:28,301 INFO    MainThread:36564 [wandb_run.py:_on_init():2411] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-25 08:57:28,301 INFO    MainThread:36564 [wandb_init.py:init():804] starting run threads in backend
+2024-07-25 08:57:28,647 INFO    MainThread:36564 [wandb_run.py:_console_start():2380] atexit reg
+2024-07-25 08:57:28,647 INFO    MainThread:36564 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-07-25 08:57:28,648 INFO    MainThread:36564 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-07-25 08:57:28,648 INFO    MainThread:36564 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-07-25 08:57:28,650 INFO    MainThread:36564 [wandb_init.py:init():847] run started, returning control to user process
+2024-07-25 08:57:28,651 INFO    MainThread:36564 [wandb_run.py:_config_callback():1382] config_cb None None {'type': 'AAAI_mse', 'attention_bool': 'True', 'model': 'iTransformer', 'dropout': 0.5, 'num_stocks': 29, 'seq_len': 20, 'label_len': 5, 'pred_len': 5, 'modes': 64, 'enc_in': 17, 'dec_in': 17, 'c_out': 17, 'd_model': 256, 'n_heads': 4, 'e_layers': 2, 'd_layers': 1, 'output_attention': True, 'embed': 'timeF', 'freq': 'd', 'factor': 1, 'd_ff': 512, 'activation': 'gelu', 'use_norm': True}
+2024-07-25 08:58:52,237 INFO    MainThread:36564 [wandb_run.py:_finish():2109] finishing run dmis/2025_AAAI_Exp/fequdkpq
+2024-07-25 08:58:52,237 INFO    MainThread:36564 [wandb_run.py:_atexit_cleanup():2349] got exitcode: 0
+2024-07-25 08:58:52,237 INFO    MainThread:36564 [wandb_run.py:_restore():2332] restore
+2024-07-25 08:58:52,238 INFO    MainThread:36564 [wandb_run.py:_restore():2338] restore done
+2024-07-25 08:58:56,515 INFO    MainThread:36564 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-07-25 08:58:56,516 INFO    MainThread:36564 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-07-25 08:58:56,527 INFO    MainThread:36564 [wandb_run.py:_footer_sync_info():3950] logging synced files

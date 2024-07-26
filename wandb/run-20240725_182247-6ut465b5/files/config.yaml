@@ -1,0 +1,104 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.19
+    cli_version: 0.17.5
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1721899367
+    t:
+      1:
+      - 1
+      - 5
+      - 37
+      - 51
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 37
+      - 51
+      - 53
+      - 55
+      3:
+      - 13
+      - 23
+      4: 3.9.19
+      5: 0.17.5
+      8:
+      - 3
+      - 5
+      13: windows-amd64
+type:
+  desc: null
+  value: AAAI
+attention_bool:
+  desc: null
+  value: 'True'
+model:
+  desc: null
+  value: iTransformer
+dropout:
+  desc: null
+  value: 0.05
+num_stocks:
+  desc: null
+  value: 29
+seq_len:
+  desc: null
+  value: 20
+label_len:
+  desc: null
+  value: 5
+pred_len:
+  desc: null
+  value: 5
+modes:
+  desc: null
+  value: 64
+enc_in:
+  desc: null
+  value: 16
+dec_in:
+  desc: null
+  value: 16
+c_out:
+  desc: null
+  value: 16
+d_model:
+  desc: null
+  value: 256
+n_heads:
+  desc: null
+  value: 4
+e_layers:
+  desc: null
+  value: 2
+d_layers:
+  desc: null
+  value: 1
+output_attention:
+  desc: null
+  value: true
+embed:
+  desc: null
+  value: timeF
+freq:
+  desc: null
+  value: d
+factor:
+  desc: null
+  value: 1
+d_ff:
+  desc: null
+  value: 512
+activation:
+  desc: null
+  value: gelu
+use_norm:
+  desc: null
+  value: true

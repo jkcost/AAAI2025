@@ -1,0 +1,29 @@
+2024-07-25 08:12:09,464 INFO    MainThread:39432 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-25 08:12:09,464 INFO    MainThread:39432 [wandb_setup.py:_flush():76] Configure stats pid to 39432
+2024-07-25 08:12:09,465 INFO    MainThread:39432 [wandb_setup.py:_flush():76] Loading settings from C:\Users\JK\.config\wandb\settings
+2024-07-25 08:12:09,465 INFO    MainThread:39432 [wandb_setup.py:_flush():76] Loading settings from C:\Users\JK\PycharmProjects\2025_AAAI\wandb\settings
+2024-07-25 08:12:09,465 INFO    MainThread:39432 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-25 08:12:09,465 INFO    MainThread:39432 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-25 08:12:09,465 INFO    MainThread:39432 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run.py', 'program_abspath': 'C:\\Users\\JK\\PycharmProjects\\2025_AAAI\\run.py', 'program': 'C:\\Users\\JK\\PycharmProjects\\2025_AAAI\\run.py'}
+2024-07-25 08:12:09,465 INFO    MainThread:39432 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-25 08:12:09,465 INFO    MainThread:39432 [wandb_init.py:_log_setup():529] Logging user logs to C:\Users\JK\PycharmProjects\2025_AAAI\wandb\run-20240725_081209-ghrd75t0\logs\debug.log
+2024-07-25 08:12:09,466 INFO    MainThread:39432 [wandb_init.py:_log_setup():530] Logging internal logs to C:\Users\JK\PycharmProjects\2025_AAAI\wandb\run-20240725_081209-ghrd75t0\logs\debug-internal.log
+2024-07-25 08:12:09,466 INFO    MainThread:39432 [wandb_init.py:init():569] calling init triggers
+2024-07-25 08:12:09,466 INFO    MainThread:39432 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {}
+2024-07-25 08:12:09,466 INFO    MainThread:39432 [wandb_init.py:init():619] starting backend
+2024-07-25 08:12:09,466 INFO    MainThread:39432 [wandb_init.py:init():623] setting up manager
+2024-07-25 08:12:09,469 INFO    MainThread:39432 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-07-25 08:12:09,471 INFO    MainThread:39432 [wandb_init.py:init():631] backend started and connected
+2024-07-25 08:12:09,477 INFO    MainThread:39432 [wandb_init.py:init():720] updated telemetry
+2024-07-25 08:12:09,479 INFO    MainThread:39432 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-25 08:12:10,074 INFO    MainThread:39432 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-25 08:12:10,102 INFO    MainThread:39432 [wandb_run.py:_on_init():2411] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-25 08:12:10,102 INFO    MainThread:39432 [wandb_init.py:init():804] starting run threads in backend
+2024-07-25 08:12:10,421 INFO    MainThread:39432 [wandb_run.py:_console_start():2380] atexit reg
+2024-07-25 08:12:10,421 INFO    MainThread:39432 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-07-25 08:12:10,422 INFO    MainThread:39432 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-07-25 08:12:10,422 INFO    MainThread:39432 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-07-25 08:12:10,424 INFO    MainThread:39432 [wandb_init.py:init():847] run started, returning control to user process
+2024-07-25 08:12:10,425 INFO    MainThread:39432 [wandb_run.py:_config_callback():1382] config_cb None None {'type': 'AAAI', 'attention_bool': 'True', 'model': 'Transformer', 'dropout': 0.5, 'num_stocks': 29, 'seq_len': 20, 'label_len': 5, 'pred_len': 5, 'modes': 64, 'enc_in': 16, 'dec_in': 16, 'c_out': 16, 'd_model': 256, 'n_heads': 4, 'e_layers': 2, 'd_layers': 1, 'output_attention': True, 'embed': 'timeF', 'freq': 'd', 'factor': 1, 'd_ff': 512, 'activation': 'gelu', 'use_norm': True}

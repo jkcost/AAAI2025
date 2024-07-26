@@ -1,0 +1,44 @@
+| Arguments Keep work_dir: C:\Users\JK\PycharmProjects\2025_AAAI\work_dir/dj30_AAAI_AAAI_adam_mse\2025_AAAI_Exp_None_exp_num_0726/135416
+rank:None start_date:['2012-02-02']
+Epoch 1, train_loss 1.564021, valid_loss 0
+Validation loss decreased (inf --> 1.489373).  Saving model ...
+rank:None start_date:['2012-02-02']
+Epoch 2, train_loss 1.313564, valid_loss 0
+Validation loss decreased (1.489373 --> 1.436413).  Saving model ...
+rank:None start_date:['2012-02-02']
+Epoch 3, train_loss 1.297755, valid_loss 0
+Validation loss decreased (1.436413 --> 1.419214).  Saving model ...
+rank:None start_date:['2012-02-02']
+Epoch 4, train_loss 1.255225, valid_loss 0
+Validation loss decreased (1.419214 --> 1.391895).  Saving model ...
+rank:None start_date:['2012-02-02']
+Epoch 5, train_loss 1.238181, valid_loss 0
+EarlyStopping counter: 1 out of 10
+rank:None start_date:['2012-02-02']
+Epoch 6, train_loss 1.133208, valid_loss 0
+EarlyStopping counter: 2 out of 10
+rank:None start_date:['2012-02-02']
+Epoch 7, train_loss 1.159859, valid_loss 0
+Validation loss decreased (1.391895 --> 1.341701).  Saving model ...
+rank:None start_date:['2012-02-02']
+Epoch 8, train_loss 1.111657, valid_loss 0
+Validation loss decreased (1.341701 --> 1.339865).  Saving model ...
+rank:None start_date:['2012-02-02']
+Epoch 9, train_loss 1.240410, valid_loss 0
+Validation loss decreased (1.339865 --> 1.321088).  Saving model ...
+rank:None start_date:['2012-02-02']
+Epoch 10, train_loss 1.101270, valid_loss 0
+EarlyStopping counter: 1 out of 10
+Successfully loaded best checkpoint...
+Test Best Episode
+test result
+----------------------------------------------------------------------------------------------------
+{'IC': -0.004428325746198224, 'ICIR': -0.053089391548805924, 'RIC': -0.0037198963538487197, 'RICIR': -0.043393942017519685}
+----------------------------------------------------------------------------------------------------
+test result
+----------------------------------------------------------------------------------------------------
++---------------------+---------------------+--------------+-------------+------------+--------------+--------------+---------------+
+|      Start Date     |       End Date      | Total Return | Sharp Ratio | Volatility | Max Drawdown | Calmar Ratio | Sortino Ratio |
++---------------------+---------------------+--------------+-------------+------------+--------------+--------------+---------------+
+| 2021-01-04 00:00:00 | 2021-12-21 00:00:00 | -15.812965%  | -137.643093 | 0.008820%  |  15.812965%  |  -1.088111   |  -129.772435  |
++---------------------+---------------------+--------------+-------------+------------+--------------+--------------+---------------+

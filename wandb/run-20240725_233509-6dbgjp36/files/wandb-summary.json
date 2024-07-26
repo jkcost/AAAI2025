@@ -1,0 +1,1 @@
+{"epoch": 10, "train_loss": 1.1303983926773071, "valid_ARR": 1.1790392398834229, "_timestamp": 1721918409.792368, "_runtime": 300.71782398223877, "_step": 10, "Total_Return": -9.992007221626409e-14, "Sharp Ratio": NaN, "Volatility": NaN, "Max Drawdown": 0, "Calmar Ratio": 0.0, "Sortino Ratio": 0.0, "_wandb": {"runtime": 300}}

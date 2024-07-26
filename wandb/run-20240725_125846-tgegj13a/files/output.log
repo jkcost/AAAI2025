@@ -1,0 +1,22 @@
+
+| Arguments Keep work_dir: C:\Users\JK\PycharmProjects\2025_AAAI\work_dir/dj30_AAAI_AAAI_adam_mse\2025_AAAI_Exp_None_exp_num_0725/125843
+Traceback (most recent call last):
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\run.py", line 238, in <module>
+    run(cfg)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\run.py", line 183, in run
+    trainer.train_and_valid()
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\trainers\AAAI_reinforce.py", line 193, in train_and_valid
+    train_loss = self.train_epoch(train_loader,rank,world_size)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\trainers\AAAI_reinforce.py", line 297, in train_epoch
+    for i, (batch_x, batch_y, batch_x_mark, batch_y_mark,return_data,date_data)in enumerate(data_loader):
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\utils\data\dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\utils\data\dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\datasets\dataset.py", line 198, in __getitem__
+    return seq_x, seq_y, seq_x_mark, seq_y_mark,return_data,date_data
+KeyboardInterrupt

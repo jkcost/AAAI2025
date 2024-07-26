@@ -1,0 +1,20 @@
+
+| Arguments Keep work_dir: C:\Users\JK\PycharmProjects\2025_AAAI\work_dir/dj30_AAAI_AAAI_adam_mse\2025_AAAI_Exp_None_exp_num_0725/121733
+rank:None end_date:['2012-02-16']
+NaN or Inf in gradients after backward for portfolio.featureconv.weight
+NaN or Inf in gradients after backward for portfolio.featureconv.bias
+NaN or Inf in gradients after backward for portfolio.fc_mu.bias
+NaN or Inf in gradients after backward for portfolio.fc_std.weight
+NaN or Inf in gradients after backward for portfolio.fc_std.bias
+Traceback (most recent call last):
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\run.py", line 238, in <module>
+    run(cfg)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\run.py", line 183, in run
+    trainer.train_and_valid()
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\trainers\AAAI_reinforce.py", line 193, in train_and_valid
+    train_loss = self.train_epoch(train_loader,rank,world_size)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\trainers\AAAI_reinforce.py", line 357, in train_epoch
+    start_date, end_date, tr, sharpe_ratio, vol, mdd, cr, sor = self.train_environment.analysis_result()
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\environments\AAAI_environment.py", line 166, in analysis_result
+    return self.evaualte(df)
+KeyboardInterrupt

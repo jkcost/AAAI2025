@@ -1,0 +1,47 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-07-26T05:00:36.503708",
+    "startedAt": "2024-07-26T05:00:35.707631",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\JK\\PycharmProjects\\2025_AAAI\\run.py",
+    "codePathLocal": "run.py",
+    "codePath": "run.py",
+    "host": "DESKTOP-SFAR1NQ",
+    "username": "JK",
+    "executable": "C:\\Users\\JK\\anaconda3\\envs\\2025_AAAI_server\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3801.0,
+        "min": 0.0,
+        "max": 3801.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3801.0,
+            "min": 0.0,
+            "max": 3801.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 930.874210357666,
+            "used": 724.7154426574707
+        }
+    },
+    "gpu": "NVIDIA TITAN Xp",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA TITAN Xp",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 31.903926849365234
+    }
+}

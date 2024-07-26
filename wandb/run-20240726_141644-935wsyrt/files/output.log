@@ -1,0 +1,42 @@
+| Arguments Keep work_dir: C:\Users\JK\PycharmProjects\2025_AAAI\work_dir/dj30_AAAI_AAAI_adam_mse\2025_AAAI_Exp_None_exp_num_0726/141640
+rank:None start_date:['2012-02-02']
+Traceback (most recent call last):
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\trainers\AAAI_mse.py", line 379, in train_epoch
+    pred = self.agent.act(batch_x, batch_x_mark, batch_y, batch_y_mark)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\nets\AAAI_mse.py", line 113, in forward
+    pred_logit = self.model(x_enc,x_mark_enc,dec_inp,x_mark_dec)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\model\FEDformer.py", line 129, in forward
+    enc_out, attns = self.encoder(enc_out, attn_mask=enc_self_mask)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\layers\Autoformer_EncDec.py", line 140, in forward
+    x, attn = attn_layer(x, attn_mask=attn_mask)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\layers\Autoformer_EncDec.py", line 106, in forward
+    new_x, attn = self.attention(
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\layers\AutoCorrelation.py", line 168, in forward
+    out, attn = self.inner_correlation(
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\layers\FourierCorrelation.py", line 54, in forward
+    x_ft = torch.fft.rfft(x, dim=-1)
+RuntimeError: cuFFT only supports dimensions whose sizes are powers of two when computing in half precision, but got a signal size of[20]

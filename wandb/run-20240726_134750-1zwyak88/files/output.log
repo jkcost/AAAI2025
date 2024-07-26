@@ -1,0 +1,40 @@
+| Arguments Keep work_dir: C:\Users\JK\PycharmProjects\2025_AAAI\work_dir/dj30_AAAI_AAAI_adam_mse\2025_AAAI_Exp_None_exp_num_0726/134747
+rank:None start_date:['2012-02-02']
+Traceback (most recent call last):
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\trainers\AAAI_mse.py", line 379, in train_epoch
+    pred = self.agent.act(batch_x, batch_x_mark, batch_y, batch_y_mark)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\nets\AAAI_mse.py", line 113, in forward
+    pred_logit = self.model(x_enc,x_mark_enc,dec_inp,x_mark_dec)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\model\Transformer.py", line 80, in forward
+    dec_out = self.forecast(x_enc, x_mark_enc, x_dec, x_mark_dec)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\model\Transformer.py", line 72, in forecast
+    enc_out = self.enc_embedding(x_enc, x_mark_enc)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\layers\Embed.py", line 122, in forward
+    x = self.value_embedding(
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\layers\Embed.py", line 39, in forward
+    x = self.tokenConv(x.permute(0, 2, 1)).transpose(1, 2)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\conv.py", line 310, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\conv.py", line 303, in _conv_forward
+    return F.conv1d(F.pad(input, self._reversed_padding_repeated_twice, mode=self.padding_mode),
+RuntimeError: Given groups=1, weight of size [256, 16, 3], expected input[29, 17, 22] to have 16 channels, but got 17 channels instead

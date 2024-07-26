@@ -1,0 +1,155 @@
+2024-07-25 08:55:56,169 INFO    StreamThr :27764 [internal.py:wandb_internal():85] W&B internal server running at pid: 27764, started at: 2024-07-25 08:55:56.168111
+2024-07-25 08:55:56,170 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: status
+2024-07-25 08:55:56,176 INFO    WriterThread:27764 [datastore.py:open_for_write():87] open: C:\Users\JK\PycharmProjects\2025_AAAI\wandb\run-20240725_085556-fei149a7\run-fei149a7.wandb
+2024-07-25 08:55:56,177 DEBUG   SenderThread:27764 [sender.py:send():379] send: header
+2024-07-25 08:55:56,177 DEBUG   SenderThread:27764 [sender.py:send():379] send: run
+2024-07-25 08:55:56,694 INFO    SenderThread:27764 [dir_watcher.py:__init__():211] watching files in: C:\Users\JK\PycharmProjects\2025_AAAI\wandb\run-20240725_085556-fei149a7\files
+2024-07-25 08:55:56,694 INFO    SenderThread:27764 [sender.py:_start_run_threads():1188] run started: fei149a7 with start time 1721865356.169111
+2024-07-25 08:55:56,713 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: check_version
+2024-07-25 08:55:56,713 DEBUG   SenderThread:27764 [sender.py:send_request():406] send_request: check_version
+2024-07-25 08:55:56,757 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: run_start
+2024-07-25 08:55:56,784 DEBUG   HandlerThread:27764 [system_info.py:__init__():26] System info init
+2024-07-25 08:55:56,785 DEBUG   HandlerThread:27764 [system_info.py:__init__():41] System info init done
+2024-07-25 08:55:56,785 INFO    HandlerThread:27764 [system_monitor.py:start():194] Starting system monitor
+2024-07-25 08:55:56,785 INFO    SystemMonitor:27764 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-25 08:55:56,785 INFO    HandlerThread:27764 [system_monitor.py:probe():214] Collecting system info
+2024-07-25 08:55:56,791 INFO    SystemMonitor:27764 [interfaces.py:start():188] Started cpu monitoring
+2024-07-25 08:55:56,791 INFO    SystemMonitor:27764 [interfaces.py:start():188] Started disk monitoring
+2024-07-25 08:55:56,792 INFO    SystemMonitor:27764 [interfaces.py:start():188] Started gpu monitoring
+2024-07-25 08:55:56,800 INFO    SystemMonitor:27764 [interfaces.py:start():188] Started memory monitoring
+2024-07-25 08:55:56,816 INFO    SystemMonitor:27764 [interfaces.py:start():188] Started network monitoring
+2024-07-25 08:55:56,820 DEBUG   HandlerThread:27764 [system_info.py:probe():152] Probing system
+2024-07-25 08:55:56,822 DEBUG   HandlerThread:27764 [gitlib.py:_init_repo():56] git repository is invalid
+2024-07-25 08:55:56,822 DEBUG   HandlerThread:27764 [system_info.py:probe():200] Probing system done
+2024-07-25 08:55:56,822 DEBUG   HandlerThread:27764 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.9.19', 'heartbeatAt': '2024-07-24T23:55:56.820257', 'startedAt': '2024-07-24T23:55:56.158109', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\Users\\JK\\PycharmProjects\\2025_AAAI\\run.py', 'codePathLocal': 'run.py', 'codePath': 'run.py', 'host': 'DESKTOP-SFAR1NQ', 'username': 'JK', 'executable': 'C:\\Users\\JK\\anaconda3\\envs\\2025_AAAI\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3801.0, 'min': 0.0, 'max': 3801.0}, 'cpu_freq_per_core': [{'current': 3801.0, 'min': 0.0, 'max': 3801.0}], 'disk': {'/': {'total': 930.874210357666, 'used': 703.0533256530762}}, 'gpu': 'NVIDIA TITAN Xp', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}], 'memory': {'total': 31.903926849365234}}
+2024-07-25 08:55:56,822 INFO    HandlerThread:27764 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-25 08:55:56,822 INFO    HandlerThread:27764 [system_monitor.py:probe():227] Publishing system info
+2024-07-25 08:55:56,822 DEBUG   HandlerThread:27764 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-25 08:55:56,828 ERROR   HandlerThread:27764 [system_info.py:_save_conda():223] Error saving conda packages: [WinError 2] 지정된 파일을 찾을 수 없습니다
+Traceback (most recent call last):
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 216, in _save_conda
+    subprocess.call(
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI\lib\subprocess.py", line 1436, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+  File "C:\Program Files\JetBrains\PyCharm 2021.1.3\plugins\python\helpers\pydev\_pydev_bundle\pydev_monkey.py", line 628, in new_CreateProcess
+    return getattr(_subprocess, original_name)(app_name, patch_arg_str_win(cmd_line), *args)
+FileNotFoundError: [WinError 2] 지정된 파일을 찾을 수 없습니다
+2024-07-25 08:55:56,830 DEBUG   HandlerThread:27764 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-25 08:55:56,832 INFO    HandlerThread:27764 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-25 08:55:56,839 DEBUG   SenderThread:27764 [sender.py:send():379] send: files
+2024-07-25 08:55:56,839 INFO    SenderThread:27764 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-25 08:55:57,077 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-25 08:55:57,077 DEBUG   SenderThread:27764 [sender.py:send_request():406] send_request: python_packages
+2024-07-25 08:55:57,078 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-25 08:55:57,078 DEBUG   SenderThread:27764 [sender.py:send_request():406] send_request: stop_status
+2024-07-25 08:55:57,082 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:55:57,421 DEBUG   SenderThread:27764 [sender.py:send():379] send: telemetry
+2024-07-25 08:55:57,421 DEBUG   SenderThread:27764 [sender.py:send():379] send: config
+2024-07-25 08:55:57,724 INFO    Thread-20 :27764 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\JK\PycharmProjects\2025_AAAI\wandb\run-20240725_085556-fei149a7\files\requirements.txt
+2024-07-25 08:55:57,725 INFO    Thread-20 :27764 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\JK\PycharmProjects\2025_AAAI\wandb\run-20240725_085556-fei149a7\files\wandb-metadata.json
+2024-07-25 08:55:57,726 INFO    Thread-20 :27764 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\JK\PycharmProjects\2025_AAAI\wandb\run-20240725_085556-fei149a7\files\conda-environment.yaml
+2024-07-25 08:55:57,845 INFO    wandb-upload_0:27764 [upload_job.py:push():130] Uploaded file C:\Users\JK\AppData\Local\Temp\tmpx05h3h9gwandb\4u4dgf7v-wandb-metadata.json
+2024-07-25 08:55:58,095 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:55:59,100 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:00,105 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:01,111 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:01,742 INFO    Thread-20 :27764 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\JK\PycharmProjects\2025_AAAI\wandb\run-20240725_085556-fei149a7\files\output.log
+2024-07-25 08:56:01,996 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 08:56:02,116 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:03,121 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:03,753 INFO    Thread-20 :27764 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\JK\PycharmProjects\2025_AAAI\wandb\run-20240725_085556-fei149a7\files\output.log
+2024-07-25 08:56:04,128 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:05,134 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:06,185 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:07,093 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 08:56:07,198 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:07,783 INFO    Thread-20 :27764 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\JK\PycharmProjects\2025_AAAI\wandb\run-20240725_085556-fei149a7\files\output.log
+2024-07-25 08:56:08,202 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:09,208 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:10,201 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:11,207 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:12,092 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-25 08:56:12,093 DEBUG   SenderThread:27764 [sender.py:send_request():406] send_request: stop_status
+2024-07-25 08:56:12,212 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:12,365 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 08:56:12,813 INFO    Thread-20 :27764 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\JK\PycharmProjects\2025_AAAI\wandb\run-20240725_085556-fei149a7\files\output.log
+2024-07-25 08:56:13,217 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:14,222 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:15,228 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:16,233 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:17,238 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:18,123 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 08:56:18,243 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:19,248 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:20,254 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:21,259 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:22,264 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:23,269 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:24,125 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 08:56:24,275 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:25,280 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:26,285 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:27,095 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-25 08:56:27,096 DEBUG   SenderThread:27764 [sender.py:send_request():406] send_request: stop_status
+2024-07-25 08:56:27,290 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:28,295 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:29,301 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:29,384 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 08:56:29,901 INFO    Thread-20 :27764 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\JK\PycharmProjects\2025_AAAI\wandb\run-20240725_085556-fei149a7\files\config.yaml
+2024-07-25 08:56:30,306 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:31,311 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:32,316 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:33,322 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:34,327 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:35,122 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 08:56:35,349 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:36,322 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:37,327 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:38,333 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:39,338 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:40,133 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 08:56:40,343 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:41,348 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:42,099 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-25 08:56:42,099 DEBUG   SenderThread:27764 [sender.py:send_request():406] send_request: stop_status
+2024-07-25 08:56:42,356 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:43,359 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:44,364 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:45,354 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 08:56:45,369 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:46,375 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:47,380 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:48,370 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:49,375 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:50,380 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:51,146 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 08:56:51,371 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:52,376 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:53,382 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:54,387 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:55,393 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:56,159 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 08:56:56,399 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:56,834 DEBUG   SystemMonitor:27764 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-25 08:56:56,835 DEBUG   SenderThread:27764 [sender.py:send():379] send: stats
+2024-07-25 08:56:57,089 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-25 08:56:57,090 DEBUG   SenderThread:27764 [sender.py:send_request():406] send_request: stop_status
+2024-07-25 08:56:57,407 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:58,412 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:56:59,418 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:57:00,425 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:57:01,431 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:57:01,446 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 08:57:02,437 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:57:03,489 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:57:04,496 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 08:57:07,186 INFO    cpu       :27764 [interfaces.py:monitor():138] Process cpu has exited.
+2024-07-25 08:57:07,187 DEBUG   SystemMonitor:27764 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-25 08:57:07,208 DEBUG   SystemMonitor:27764 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-25 08:57:07,208 DEBUG   HandlerThread:27764 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 08:57:07,210 DEBUG   SenderThread:27764 [sender.py:send():379] send: stats
+2024-07-25 08:57:07,227 INFO    MainThread:27764 [internal.py:handle_exit():75] Internal process exited

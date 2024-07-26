@@ -1,0 +1,18 @@
+
+| Arguments Keep work_dir: C:\Users\JK\PycharmProjects\2025_AAAI\work_dir/dj30_AAAI_AAAI_adam_mse\2025_AAAI_Exp_None_exp_num_0725/222405
+rank:None start_date:['2012-02-02']
+Traceback (most recent call last):
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\run.py", line 239, in <module>
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\run.py", line 184, in run
+    trainer.train_and_valid()
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\trainers\AAAI_reinforce.py", line 193, in train_and_valid
+    train_loss = self.train_epoch(train_loader,rank,world_size)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\trainers\AAAI_reinforce.py", line 307, in train_epoch
+    scores,log_prob = self.agent.act(batch_x,batch_x_mark,batch_y,batch_y_mark)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\JK\anaconda3\envs\2025_AAAI_server\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\JK\PycharmProjects\2025_AAAI\nets\AAAI.py", line 122, in forward
+    mu, std = self.portfolio(pred_scores)
+KeyboardInterrupt

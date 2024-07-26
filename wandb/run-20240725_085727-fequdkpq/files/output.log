@@ -1,0 +1,33 @@
+| Arguments Keep work_dir: C:\Users\JK\PycharmProjects\2025_AAAI\work_dir/dj30_AAAI_AAAI_adam_mse\2025_AAAI_Exp_None_exp_num_0725/085724
+rank:None start_date:['2012-02-02']
+Epoch 1, train_loss 1.131854, valid_loss 0
+Validation ARR Increased (inf --> 1.313466).  Saving model ...
+rank:None start_date:['2012-02-02']
+Epoch 2, train_loss 1.160444, valid_loss 0
+EarlyStopping counter: 1 out of 10
+rank:None start_date:['2012-02-02']
+Epoch 3, train_loss 1.140625, valid_loss 0
+EarlyStopping counter: 2 out of 10
+rank:None start_date:['2012-02-02']
+Epoch 4, train_loss 1.294955, valid_loss 0
+EarlyStopping counter: 3 out of 10
+rank:None start_date:['2012-02-02']
+Epoch 5, train_loss 1.234285, valid_loss 0
+EarlyStopping counter: 4 out of 10
+rank:None start_date:['2012-02-02']
+Epoch 6, train_loss 1.184271, valid_loss 0
+EarlyStopping counter: 5 out of 10
+rank:None start_date:['2012-02-02']
+Epoch 7, train_loss 1.164534, valid_loss 0
+EarlyStopping counter: 6 out of 10
+rank:None start_date:['2012-02-02']
+Epoch 8, train_loss 1.065727, valid_loss 0
+EarlyStopping counter: 7 out of 10
+rank:None start_date:['2012-02-02']
+Epoch 9, train_loss 1.235908, valid_loss 0
+EarlyStopping counter: 8 out of 10
+rank:None start_date:['2012-02-02']
+Epoch 10, train_loss 1.098838, valid_loss 0
+EarlyStopping counter: 9 out of 10
+Successfully loaded best checkpoint...
+Test Best Episode
